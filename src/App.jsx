@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Login } from "./components/Login";
 import { Logout } from "./components/Logout";
@@ -13,6 +13,7 @@ function App() {
   return (
     <div className="App">
       <h1>Job Application</h1>
+      
       <div className='mainDiv'>
         {user ? <Logout/> : <Login/>}
       </div>

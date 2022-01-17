@@ -20,6 +20,7 @@ export const Login = () => {
     }
     return (
         <div>
+            <h3>Admin Login</h3>
             <form action="" onSubmit={(e) => handleSubmit(e)}>
                 <label htmlFor="">Nmae</label>
                 <input type="text" placeholder='name' 
