@@ -16,7 +16,7 @@ export const Login = () => {
             email:email,
             password:password,
             loggedin : true
-        }))
+        }));
     }
     return (
         <div>

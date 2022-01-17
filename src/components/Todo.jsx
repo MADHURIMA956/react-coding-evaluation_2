@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addjob } from "../features/jobSlice";
+import { addTodo,deleteTodo,removeTodo } from "../actions/index";
 
 export const Todo=()=> {
 
@@ -23,7 +24,9 @@ dispatch(addjob({
     jobdes:jobdes,
     jobloc:jobloc,
     jobtype:jobtype,
-}))
+}));
+
+alert("New Job is added")
     
 }
 
@@ -65,7 +68,15 @@ dispatch(addjob({
                 value={jobtype}
                 onChange={(e) => setJobtype(e.target.value)}
                 /><br />
-                <button type="submit">ADD JOB</button>
+                <button type="submit" onClick={dispatch(addTodo({
+    cname:cname,
+    Title:Title,
+    salarystart:salarystart,
+    salaryend:salaryend,
+    jobdes:jobdes,
+    jobloc:jobloc,
+    jobtype:jobtype,
+}))}>ADD JOB</button>
          </form>
             </div>
     )

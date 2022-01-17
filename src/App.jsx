@@ -17,6 +17,9 @@ function App() {
       <div className='mainDiv'>
         {user ? <Logout/> : <Login/>}
       </div>
+      <div>
+     
+      </div>
     </div>
   );
 }
