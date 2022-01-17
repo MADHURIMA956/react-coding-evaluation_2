@@ -1,0 +1,14 @@
+label {
+  padding-right: 20px;
+}
+input {
+  width: 30%;
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+button {
+  padding: 12px;
+  margin: 10px;
+}

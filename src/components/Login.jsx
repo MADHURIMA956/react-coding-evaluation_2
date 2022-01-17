@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "../features/userSlice";
+import "./style.css"
 
 export const Login = () => {
     const [name , setName] = useState("");
@@ -22,7 +23,7 @@ export const Login = () => {
         <div>
             <h3>Admin Login</h3>
             <form action="" onSubmit={(e) => handleSubmit(e)}>
-                <label htmlFor="">Nmae</label>
+                <label htmlFor="">Name</label>
                 <input type="text" placeholder='name' 
                 value={name} 
                 onChange={(e) => setName(e.target.value)}

@@ -1,3 +1,4 @@
+import "./style.css"
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addjob } from "../features/jobSlice";
