@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addjob } from "../features/jobSlice";
-import { addTodo,deleteTodo,removeTodo } from "../actions/index";
+import { addTodo } from "../actions/index";
 
 export const Todo=()=> {
 
